@@ -85,8 +85,8 @@ Den ene er at `require()` modulet i toppen af `routes.js`, før `modules.exports
 const date = require('date-and-time');
 module.exports = (app) => {
    app.get('/', (req, res, next) => {
-      let now = new Date('2019-01-14 07:00:14');
-      console.log(date.format(now, 'h:mm A | MMMM DD'));
+      let date = new Date('2019-01-14 07:00:14');
+      console.log(date.format(date, 'h:mm A | MMMM DD'));
    });
 };
 ```
